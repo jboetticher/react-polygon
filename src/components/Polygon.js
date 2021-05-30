@@ -123,7 +123,7 @@ export default class Polygon extends Component {
 
   render () {
     return (
-      <svg width={this.props.size} height={this.props.size} className={this.props.className}>
+      <svg width={this.props.size} height={this.props.size} className={this.props.className} onClick={this.props.onClick}>
         <polygon
           className={this.props.classPrefix + 'polygon' || (this.props.classPrefix + 'svg')}
           points={this.state.currentPoints}
